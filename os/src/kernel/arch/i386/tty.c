@@ -41,6 +41,12 @@ void terminal_putentryat(char c, uint8_t color, size_t x, size_t y)
     terminal_buffer[index] = vga_entry(c, color);
 }
 
+static inline size_t vga_index(size_t x, size_t y)
+{
+    return y * VGA_WIDTH + x;
+}
+
+
 void terminal_scroll(){
     size_t y;
     for(y = 0; y < VGA_HEIGHT - 1; y++){
