@@ -6,7 +6,7 @@
 #include <stddef.h>
 
 #ifdef __cplusplus
-extern "C"{
+extern "C" {
 #endif
 
 int memcmp(const void*, const void*, size_t);
@@ -17,7 +17,6 @@ size_t strlen(const char*);
 
 #ifdef __cplusplus
 }
-
 #endif
 
 #endif

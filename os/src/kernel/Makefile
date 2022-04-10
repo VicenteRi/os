@@ -1,4 +1,4 @@
-DEFAULT_HOST!=../defauilt-host.sh
+DEFAULT_HOST!=../default-host.sh
 HOST?=DEFAULT_HOST
 HOSTARCH!=../target-triplet-to-arch.sh $(HOST)
 
@@ -81,4 +81,3 @@ install-kernel: myos.kernel
 	cp myos.kernel $(DESTDIR)$(BOOTDIR)
 
 -include $(OBJS:.o=.d)
-
